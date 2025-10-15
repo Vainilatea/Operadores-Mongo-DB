@@ -1,0 +1,9 @@
+// $regex: Buscar por patrón
+db.usuarios.find({
+  nombre: { $regex: /^A/i }   // Nombres que empiezan con "A", sin distinguir mayúsculas
+})
+
+// $expr: Comparar campos dentro del mismo documento
+db.ventas.find({
+  $expr: { $gt: ["$precioFinal", "$precioBase"] }
+})
