@@ -1,3 +1,5 @@
+// Ejercicio tienda de videojuegos
+
 use videojuegos
 
 db.tiendaVideojuegos.insertOne({
@@ -8,6 +10,7 @@ db.tiendaVideojuegos.insertOne({
   "stock": 20,
   "detalles adicionales": {"Fecha de lanzamiento": ISODate("2017-03-03T00:00:00Z") , "Desarrolladora": "Nintendo"},
 })
+
 
 
 db.tiendaVideojuegos.insertMany([
@@ -44,8 +47,11 @@ db.tiendaVideojuegos.insertMany([
 db.tiendaVideojuegos.insertOne({
   "nombre": "Hollow Knight",
   "consola": "Multiplataforma",
-  "generos": ["Aventura", "Mundo Abierto"],
+  "generos": ["Metroidvania"],
   "precio": 14.99,
   "stock": 40,
-  "detalles adicionales": {"Fecha de lanzamiento": ISODate("2017-02-24T00:00:00Z") , "Desarrolladora": "Team Cherry", "Idiomas Disponibles": ["Ingles", "Español", "Frances"]},
+  "detalles adicionales": {"Fecha de lanzamiento": ISODate("2017-02-24T00:00:00Z") , "Desarrolladora": "Team Cherry", "Idiomas Disponibles": ["Ingles", "Español", "Francés"]},
 })
+
+
+// 
