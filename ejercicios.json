@@ -1,0 +1,51 @@
+use videojuegos
+
+db.tiendaVideojuegos.insertOne({
+  "nombre": "The Legend of Zelda: Breath of the Wild",
+  "consola": "Nintendo Switch",
+  "generos": ["Aventura", "Mundo Abierto"],
+  "precio": 59.99,
+  "stock": 20,
+  "detalles adicionales": {"Fecha de lanzamiento": ISODate("2017-03-03T00:00:00Z") , "Desarrolladora": "Nintendo"},
+})
+
+
+db.tiendaVideojuegos.insertMany([
+    {
+    "nombre": "God of War Ragnarok",
+    "consola": "Play Station 5",
+    "generos": ["Accion", "Aventura"],
+    "precio": 69.99,
+    "stock": 15,
+    "detalles adicionales": {"Fecha de lanzamiento": ISODate("2022-11-01T00:00:00Z"), "Desarrolladora": "Sanata Monica Studios"}
+    },
+    {
+    "nombre": "Minecraft",
+    "consola": "Multiplataforma",
+    "generos": ["Construccion","Supervivencia"],
+    "precio": 29.99,
+    "stock": 50,
+    "detalles adicionales": {"Fecha de lanzamiento": ISODate("2009-10-20T00:00:00Z") , "Desarrolladora": "Mojang"}
+    },
+    {
+    "nombre": "Mario Kart 8 Deluxe",
+    "consola": "Nintendo Switch",
+    "generos": ["Carreras"],
+    "precio": 49.99,
+    "stock": 25,
+    "detalles adicionales": {"Fecha de lanzamiento": ISODate("2017-03-17T00:00:00Z") , "Desarrolladora": "Nintendo"},
+    }
+], {"ordered":false})
+
+
+
+
+
+db.tiendaVideojuegos.insertOne({
+  "nombre": "Hollow Knight",
+  "consola": "Multiplataforma",
+  "generos": ["Aventura", "Mundo Abierto"],
+  "precio": 14.99,
+  "stock": 40,
+  "detalles adicionales": {"Fecha de lanzamiento": ISODate("2017-02-24T00:00:00Z") , "Desarrolladora": "Team Cherry", "Idiomas Disponibles": ["Ingles", "Español", "Frances"]},
+})

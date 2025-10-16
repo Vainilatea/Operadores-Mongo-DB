@@ -51,11 +51,12 @@ db.productos.insertMany([
   { "nombre": "Ratón", precio: 20, stock: 100, categoria: "accesorios" },
   { "nombre": "Monitor", precio: 200, stock: 25, categoria: "pantallas" },
   { "nombre": "Silla Gamer", precio: 150, stock: 15, categoria: "muebles" }
-])
+]), {"ordered":false}
 
 
 db.libros.insertMany([
   {
+  "_id":1,
   "titulo": "Lo que sea2",
   "year": 2025,
   "ciudad": "Vigo",
@@ -63,11 +64,14 @@ db.libros.insertMany([
   "categoria": ["Terror"]
   },
   {
+  "_id":2,
   "titulo": "Lo que sea3",
   "year": 2022,
   "ciudad": "Barcelona",
   "autor": "Yo mismo",
   "categoria": ["Historico"],
   "disponible": true
-  },
-])
+  }
+],{"ordered":false}) // con el ordered "salta" los duplicados
+
+
