@@ -1,3 +1,10 @@
+"""
+
+https://regex101.com/
+
+https://regexr.com/
+"""
+
 // $regex: Buscar por patrón
 db.usuarios.find({
   "nombre": { $regex: /^A/i }   // Nombres que empiezan con "A", sin distinguir mayúsculas
