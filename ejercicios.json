@@ -74,8 +74,12 @@ db["movies"].find(
 
 )
 
-db["movies"].find({
-    {"type":"series"},
-    {"$or":[{"year":{"$gte":1980,"$lte":2000}},{"languages": "English"}]}}) // está mal
+db["movies"].find(
+  {"type":"series","$or":[
+        {"year":{"$gte":1980,"$lte":2000}},
+        {"languages": "French"}
+      ]
+    }
+)
 
 
