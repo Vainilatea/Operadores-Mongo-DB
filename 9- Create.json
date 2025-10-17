@@ -6,6 +6,11 @@ use biblioteca
 
 show collections
 
+"""
+Create
+
+"""
+
 // Insertar un documento individual
 db.usuarios.insertOne({
   "nombre": "Juan Pérez",
