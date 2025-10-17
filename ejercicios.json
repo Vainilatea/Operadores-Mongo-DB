@@ -54,4 +54,7 @@ db.tiendaVideojuegos.insertOne({
 })
 
 
-// 
+// Ejercicio de consultas: 
+
+
+db["movies"].find({"type": {"$eq":"series"},"year":{"$gt":1999}}, {"title":1} )
